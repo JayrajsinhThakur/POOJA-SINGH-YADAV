@@ -94,8 +94,6 @@ fun showlist(){
                             textAlign = TextAlign.Start
 
                         )
-
-
                         Text(
                             text = "12 april 2024",
                             color = Color.Black,
@@ -106,10 +104,6 @@ fun showlist(){
                         )
                     }
 
-
-
-
-
                     Text(text = "$24",
                         color = Color.Black,
                         fontSize = 14.sp,
@@ -119,10 +113,9 @@ fun showlist(){
                             .padding(10.dp),
                         textAlign = TextAlign.End)
 
-                }
+                     }
                 }
             }
-
         }
 }
 

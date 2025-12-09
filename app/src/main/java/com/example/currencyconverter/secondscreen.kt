@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -33,6 +34,7 @@ fun secondscreen(navController: NavController) {
         Text(text = "Welcome to \n Currency Converter",
             color = Color.Black,
             fontSize = 30.sp,
+            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(16.dp))
 
@@ -50,6 +52,7 @@ fun secondscreen(navController: NavController) {
                 "for effortless currency conversion.",
             color = Color.Black,
             fontSize = 20.sp,
+            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Medium,
             modifier = Modifier.padding(16.dp)
                 .align(Alignment.CenterHorizontally))
