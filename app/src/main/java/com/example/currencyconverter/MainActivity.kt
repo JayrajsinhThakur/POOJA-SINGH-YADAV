@@ -32,15 +32,15 @@ class MainActivity : ComponentActivity() {
                     secondscreen(navController)
             }
                 composable("homescreen"){
-                    homescreen()
+                    homescreen(navController)
                 }
-               /* composable("historyscreen"){
+                composable("historyscreen"){
                     historyscreen()
-                }*/
+                }
+                composable("lastscreen"){
+                    lastscreen()
+                }
             }
-
-
-
         }
     }
 }

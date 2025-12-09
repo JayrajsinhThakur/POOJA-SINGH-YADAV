@@ -35,12 +35,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun homescreen (){
+fun homescreen (navController:  NavController){
     Column {
-        topcard()
 
+        topcard(navController)
         Column (modifier = Modifier
             .height(100.dp)
             .padding(10.dp),
@@ -71,9 +72,6 @@ fun homescreen (){
         showlisthistory()
     }
 }
-
-
-
 
 // funtion for displaying the list
 @Composable
@@ -144,7 +142,7 @@ fun showlisthistory() {
 }
 
 @Composable
-fun topcard (){
+fun topcard (navController: NavController){
     Box(modifier = Modifier
         .fillMaxWidth()
         .background(Color.Blue)
@@ -220,7 +218,8 @@ fun topcard (){
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
                     ){
-                        Button(onClick = { /*TODO*/ },
+                        Button(onClick = {
+                            navController.navigate("historyscreen") },
                             colors = ButtonDefaults.buttonColors(Color.White),
                             shape = RoundedCornerShape(30.dp),
                             modifier = Modifier.weight(1f)
@@ -230,7 +229,8 @@ fun topcard (){
 
                         Spacer(modifier = Modifier.width(10.dp))
 
-                        Button(onClick = { /*TODO*/ },
+                        Button(onClick = {
+                            navController.navigate("lastscreen") },
                             colors = ButtonDefaults.buttonColors(Color.Black),
                             shape = RoundedCornerShape(30.dp),
                             modifier = Modifier.weight(1f)

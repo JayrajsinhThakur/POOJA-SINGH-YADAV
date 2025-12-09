@@ -43,7 +43,7 @@ fun secondscreen(navController: NavController) {
             contentDescription = "logo",
             modifier =  Modifier.padding(16.dp)
                 .height(250.dp)
-                .width(250.dp))
+                .fillMaxWidth())
 
         Spacer(modifier = Modifier.padding(30.dp))
 
