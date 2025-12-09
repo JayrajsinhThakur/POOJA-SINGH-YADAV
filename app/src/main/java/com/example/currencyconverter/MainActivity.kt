@@ -22,16 +22,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            //spalshscreen()
-            //secondscreen()
 
             val navController = rememberNavController()
             NavHost(navController= navController, startDestination = "spalshscreen"){
                 composable("spalshscreen"){
-                    spalshscreen()
+                    spalshscreen(navController)
                 }
                 composable("secondscreen"){
-                    secondscreen()
+                    secondscreen(navController)
             }
                 composable("homescreen"){
                     homescreen()

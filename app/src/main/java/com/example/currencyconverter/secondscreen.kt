@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -29,9 +30,9 @@ fun secondscreen(navController: NavController) {
 
         Spacer(modifier = Modifier.padding(30.dp))
 
-        Text(text = "Welcome to Currency Converter",
+        Text(text = "Welcome to \n Currency Converter",
             color = Color.Black,
-            fontSize = 20.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(16.dp))
 
@@ -39,27 +40,37 @@ fun secondscreen(navController: NavController) {
         Image(painter = painterResource(id = R.drawable.illustrator),
             contentDescription = "logo",
             modifier =  Modifier.padding(16.dp)
-                .height(200.dp)
-                .width(200.dp))
+                .height(250.dp)
+                .width(250.dp))
 
         Spacer(modifier = Modifier.padding(30.dp))
 
-        Text(text = "Welcome to Currency Converter",
+        Text(text = "Instantly convert between oner 150 " +
+                "currencies.Currency Convert is your one stop solution " +
+                "for effortless currency conversion.",
             color = Color.Black,
             fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(16.dp))
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.padding(16.dp)
+                .align(Alignment.CenterHorizontally))
 
 
-        Spacer(modifier = Modifier.padding(30.dp))
+        Spacer(modifier = Modifier.padding(20.dp))
 
         Button(onClick = {
             navController.navigate("homescreen")
         },
+            colors = ButtonDefaults.buttonColors(Color.Blue),
             modifier = Modifier.padding(16.dp)
-                .fillMaxWidth())
+                .height(40.dp)
+                .fillMaxWidth(),
+           )
         {
-            Text(text = "Get Started")
+            Text(text = "Get Started",
+                modifier= Modifier.padding(5.dp),
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                fontSize = 12.sp)
 
         }
 
