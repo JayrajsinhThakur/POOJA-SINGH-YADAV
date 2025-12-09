@@ -28,9 +28,8 @@ fun spalshscreen() {
                 .padding(16.dp)
                 .height(100.dp)
         )
+
      }
-
-
 }
 
 
