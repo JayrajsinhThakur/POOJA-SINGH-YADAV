@@ -1,6 +1,7 @@
 package com.example.currencyconverter
 
 import android.R.attr.padding
+import android.os.Handler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,10 +13,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 
 @Composable
-fun spalshscreen() {
+fun spalshscreen(navController: NavController) {
+
+    Handler().postDelayed({
+        navController.navigate("secondscreen")
+
+    }, 3000)
 
     Column (modifier = Modifier.fillMaxSize()
         .padding(16.dp),

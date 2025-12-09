@@ -18,9 +18,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun secondscreen() {
+fun secondscreen(navController: NavController) {
 
     Column (modifier = Modifier.fillMaxSize()
         .padding(25.dp),
@@ -53,8 +54,7 @@ fun secondscreen() {
         Spacer(modifier = Modifier.padding(30.dp))
 
         Button(onClick = {
-
-
+            navController.navigate("homescreen")
         },
             modifier = Modifier.padding(16.dp)
                 .fillMaxWidth())
@@ -62,8 +62,6 @@ fun secondscreen() {
             Text(text = "Get Started")
 
         }
-
-
 
     }
 
