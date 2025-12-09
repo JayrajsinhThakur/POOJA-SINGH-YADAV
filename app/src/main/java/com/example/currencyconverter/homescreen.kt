@@ -72,6 +72,10 @@ fun homescreen (){
     }
 }
 
+
+
+
+// funtion for displaying the list
 @Composable
 fun showlisthistory() {
     LazyColumn {
@@ -122,10 +126,6 @@ fun showlisthistory() {
                         )
                     }
 
-
-
-
-
                     Text(
                         text = "$24",
                         color = Color.Black,
@@ -159,7 +159,6 @@ fun topcard (){
 
                 ) { Row(
                     verticalAlignment = Alignment.CenterVertically
-
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.profile),
@@ -185,7 +184,7 @@ fun topcard (){
                     }
                 }
 
-                    Box{
+                    Row {
                         Icon(
                             imageVector = Icons.Default.Notifications,
                             contentDescription = "notifications",
@@ -193,7 +192,7 @@ fun topcard (){
                             modifier = Modifier.size(25.dp)
                         )
 
-                        Spacer(Modifier.width(12.dp))
+                        Spacer(Modifier.width(5.dp))
 
                         Icon(
                             imageVector = Icons.Default.Settings,
@@ -238,9 +237,7 @@ fun topcard (){
                         ) {
                             Text("DEPOSIT" , color = Color.White)
                         }
-
                     }
             }
         }
-
 }

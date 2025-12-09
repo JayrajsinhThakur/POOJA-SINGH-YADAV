@@ -56,6 +56,8 @@ fun historyscreen() {
     }
 }
 
+
+// function for display the list
 @Composable
 fun showlist(){
 
