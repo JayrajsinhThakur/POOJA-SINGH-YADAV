@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -33,7 +34,8 @@ fun spalshscreen(navController: NavController) {
             contentDescription = "logo",
             modifier = Modifier
                 .padding(16.dp)
-                .height(100.dp)
+                .height(200.dp)
+                .width(200.dp)
         )
 
      }

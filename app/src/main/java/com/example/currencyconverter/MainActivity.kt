@@ -31,8 +31,11 @@ class MainActivity : ComponentActivity() {
                 composable("secondscreen"){
                     secondscreen(navController)
             }
-                composable("homescreen"){
+                /*composable("homescreen"){
                     homescreen()
+                }*/
+                composable("historyscreen"){
+                    historyscreen()
                 }
             }
 
