@@ -58,7 +58,7 @@ fun secondscreen(navController: NavController) {
         Spacer(modifier = Modifier.padding(20.dp))
 
         Button(onClick = {
-            navController.navigate("historyscreen")
+            navController.navigate("homescreen")
         },
             colors = ButtonDefaults.buttonColors(Color.Blue),
             modifier = Modifier.padding(16.dp)
